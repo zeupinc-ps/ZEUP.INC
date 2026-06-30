@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByCubo System — Metodología Propietaria ZEUP</title>
+    <meta name="description" content="ByCubo System: metodología propietaria ZEUP con 12 módulos interconectados para construir empresas sólidas y escalables.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Saira:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="logo">
+                    <span class="logo-icon"><svg class="logo-cube" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4 L34 12 L20 20 L6 12 Z" fill="#06253F" stroke="#E7C76A" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 12 L6 28 L20 36 L20 20 Z" fill="#041C32" stroke="#C89B3C" stroke-width="1.5" stroke-linejoin="round"/><path d="M34 12 L34 28 L20 36 L20 20 Z" fill="#06253F" stroke="#D6A847" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 11 L27 15 L20 19 L13 15 Z" fill="#00C8FF"/><line x1="20" y1="19" x2="20" y2="31" stroke="#00C8FF" stroke-width="1.6"/></svg></span>
+                    <span class="logo-text">ZE<span class="logo-up">UP</span></span>
+                </div>
+            </div>
+
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="bycubo-system.html" class="nav-link">ByCubo System</a>
+                <a href="departamentos.html" class="nav-link">Departamentos</a>
+                <a href="educacion.html" class="nav-link">Educación</a>
+                <a href="index.html#contact" class="nav-link">Contacto</a>
+            </div>
+
+            <button class="navbar-cta" onclick="window.location.href='index.html#contact'">Agendar Reunión</button>
+
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="padding-top: 80px;">
+        <div class="hero-container" style="grid-template-columns: 1fr;">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">METODOLOGÍA PROPIETARIA ZEUP</span>
+                </div>
+
+                <h1 class="hero-title">
+                    El sistema que construye empresas <span class="accent-text">sólidas.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    ByCubo System es un método de construcción empresarial estructurado en 12 módulos interconectados. Cada pieza activa la siguiente. El resultado: una empresa que opera como sistema, no como suma de partes.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Solicitar diagnóstico</button>
+                    <button class="btn btn-secondary">Ver los 12 módulos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="core-ecosystem">
+        <div class="container">
+            <div class="problems-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="problems-left">
+                    <div class="eyebrow">EL PROBLEMA QUE RESOLVEMOS</div>
+                    <h2 class="section-title">Las empresas no colapsan de repente. Se desmoronan por falta de estructura.</h2>
+                    <p class="section-text">El 80% de los negocios nunca llega a los 5 años. No por falta de producto ni de mercado. Por ausencia de un sistema interno que soporte el crecimiento.</p>
+                </div>
+
+                <div class="problems-list" style="gap: var(--spacing-lg);">
+                    <div class="problem-item critical" style="padding: var(--spacing-lg); gap: var(--spacing-md);">
+                        <span class="problem-dot"></span>
+                        <span class="problem-text">Sin modelo operativo claro — Las empresas crecen por inercia hasta que el caos las detiene.</span>
+                    </div>
+                    <div class="problem-item high" style="padding: var(--spacing-lg); gap: var(--spacing-md);">
+                        <span class="problem-dot"></span>
+                        <span class="problem-text">Dependencia del fundador — Todo pasa por una persona. Sin sistema, no hay escala posible.</span>
+                    </div>
+                    <div class="problem-item critical" style="padding: var(--spacing-lg); gap: var(--spacing-md);">
+                        <span class="problem-dot"></span>
+                        <span class="problem-text">Procesos no documentados — El conocimiento vive en las cabezas, no en el sistema.</span>
+                    </div>
+                    <div class="problem-item high" style="padding: var(--spacing-lg); gap: var(--spacing-md);">
+                        <span class="problem-dot"></span>
+                        <span class="problem-text">Tecnología sin integración — Herramientas sueltas sin ecosistema. Más trabajo, no menos.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT IS BYCUBO -->
+    <section class="tools-section">
+        <div class="container" style="text-align: center;">
+            <div class="eyebrow" style="justify-content: center; margin-bottom: var(--spacing-lg);">QUÉ ES BYCUBO SYSTEM</div>
+            <h2 class="section-title" style="font-size: 42px;">No es un curso. No es consultoría. Es una arquitectura empresarial.</h2>
+            <p class="section-subtitle" style="font-size: 18px; max-width: 700px; margin: 0 auto;">
+                ByCubo System es el método propietario de ZEUP para construir una empresa desde sus fundamentos estructurales. 12 módulos que se activan en secuencia, donde cada etapa habilita la siguiente, creando un ecosistema empresarial completo y autónomo.
+            </p>
+        </div>
+    </section>
+
+    <!-- 12 MODULES SECTION -->
+    <section class="core-ecosystem">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">LOS 12 MÓDULOS DEL SISTEMA</div>
+                <h2 class="section-title">Cada módulo activa el siguiente.</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); max-width: 1200px; margin: 0 auto;">
+                <div class="ecosystem-card">
+                    <div class="card-number">M·01</div>
+                    <div class="card-icon">🏛️</div>
+                    <h3 class="card-title">Fundamentos Estratégicos</h3>
+                    <p class="card-description">Propósito, misión, visión, valores y posicionamiento. La base sobre la que todo se construye.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·02</div>
+                    <div class="card-icon">⚙️</div>
+                    <h3 class="card-title">Modelo de Negocio</h3>
+                    <p class="card-description">Diseño y validación del modelo. Propuesta de valor, segmentos, canales y estructura de revenue.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·03</div>
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Estructura Organizacional</h3>
+                    <p class="card-description">Organigrama funcional, roles, responsabilidades y flujos de autoridad claramente definidos.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·04</div>
+                    <div class="card-icon">🔄</div>
+                    <h3 class="card-title">Procesos Operativos</h3>
+                    <p class="card-description">Mapeo, documentación y optimización de todos los procesos críticos del negocio.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·05</div>
+                    <div class="card-icon">📈</div>
+                    <h3 class="card-title">Sistema Comercial</h3>
+                    <p class="card-description">Pipeline de ventas, proceso comercial, scripts, propuestas y sistema de cierre predecible.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·06</div>
+                    <div class="card-icon">📣</div>
+                    <h3 class="card-title">Ecosistema de Marketing</h3>
+                    <p class="card-description">Estrategia de marca, canales digitales, contenido, generación de leads y posicionamiento.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·07</div>
+                    <div class="card-icon">💰</div>
+                    <h3 class="card-title">Gestión Financiera</h3>
+                    <p class="card-description">Contabilidad de gestión, flujo de caja, presupuestos, KPIs financieros y control de costos.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·08</div>
+                    <div class="card-icon">🤖</div>
+                    <h3 class="card-title">Automatización</h3>
+                    <p class="card-description">Herramientas y flujos automatizados para reducir trabajo manual y aumentar eficiencia.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·09</div>
+                    <div class="card-icon">👥</div>
+                    <h3 class="card-title">Gestión de Talento</h3>
+                    <p class="card-description">Selección, onboarding, desarrollo, cultura empresarial y retención de personas clave.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·10</div>
+                    <div class="card-icon">🛡️</div>
+                    <h3 class="card-title">Marco Legal y Compliance</h3>
+                    <p class="card-description">Estructura jurídica, contratos, protección IP, compliance regulatorio y gestión de riesgos.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·11</div>
+                    <div class="card-icon">📡</div>
+                    <h3 class="card-title">Tecnología e Infraestructura</h3>
+                    <p class="card-description">Stack tecnológico, integraciones, bases de datos, seguridad y arquitectura digital empresarial.</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">M·12</div>
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">Escalamiento y Expansión</h3>
+                    <p class="card-description">Estrategias de crecimiento, expansión geográfica, franchising, inversión y métricas de escala.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">RESULTADOS PROBADOS</div>
+                <h2 class="section-title">Lo que ocurre cuando implementas el sistema.</h2>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-big">−60%</div>
+                    <div class="metric-label">Reducción de dependencia del fundador</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-big accent">+3×</div>
+                    <div class="metric-label">Velocidad de escalamiento</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-big cyan">90d</div>
+                    <div class="metric-label">Para ver resultados operativos tangibles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="cta-title">¿Tu empresa está lista para operar como sistema?</h2>
+            <p class="cta-subtitle">Un diagnóstico ByCubo evalúa tu empresa contra los 12 módulos e identifica exactamente dónde está el cuello de botella.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Solicitar Diagnóstico ByCubo →</button>
+                <button class="btn btn-secondary" onclick="window.location.href='departamentos.html'">Ver Departamentos Operacionales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon"><svg class="logo-cube" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4 L34 12 L20 20 L6 12 Z" fill="#06253F" stroke="#E7C76A" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 12 L6 28 L20 36 L20 20 Z" fill="#041C32" stroke="#C89B3C" stroke-width="1.5" stroke-linejoin="round"/><path d="M34 12 L34 28 L20 36 L20 20 Z" fill="#06253F" stroke="#D6A847" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 11 L27 15 L20 19 L13 15 Z" fill="#00C8FF"/><line x1="20" y1="19" x2="20" y2="31" stroke="#00C8FF" stroke-width="1.6"/></svg></span>
+                    <span class="logo-text">ZE<span class="logo-up">UP</span></span>
+                </div>
+                <p class="footer-description">Incubadora · Gestora · Optimizadora de Empresas. Infraestructura operativa que construye sistemas capaces de construir empresas extraordinarias.</p>
+                <div class="footer-slogan">Conectamos · Optimizamos · Potenciamos</div>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Ecosistema</div>
+                <a href="bycubo-system.html">ByCubo System</a>
+                <a href="departamentos.html">Departamentos</a>
+                <a href="educacion.html">Educación</a>
+                <a href="index.html">Metodología</a>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Empresa</div>
+                <a href="index.html">Quiénes somos</a>
+                <a href="index.html">Casos de éxito</a>
+                <a href="index.html">Partners</a>
+                <a href="index.html#contact">Contacto</a>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Legal</div>
+                <a href="#">Privacidad</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZEUP. Todos los derechos reservados.</p>
+            <div class="footer-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter/X</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

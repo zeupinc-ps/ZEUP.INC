@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Empresarial — ZEUP</title>
+    <meta name="description" content="Cursos, programas, ebooks y certificaciones para formar equipos que operan como ecosistemas empresariales inteligentes.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Saira:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .purple-accent { color: var(--color-accent-purple); }
+        .ecosystem-card.purple { border-left: 3px solid var(--color-accent-purple); }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="logo">
+                    <span class="logo-icon"><svg class="logo-cube" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4 L34 12 L20 20 L6 12 Z" fill="#06253F" stroke="#E7C76A" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 12 L6 28 L20 36 L20 20 Z" fill="#041C32" stroke="#C89B3C" stroke-width="1.5" stroke-linejoin="round"/><path d="M34 12 L34 28 L20 36 L20 20 Z" fill="#06253F" stroke="#D6A847" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 11 L27 15 L20 19 L13 15 Z" fill="#00C8FF"/><line x1="20" y1="19" x2="20" y2="31" stroke="#00C8FF" stroke-width="1.6"/></svg></span>
+                    <span class="logo-text">ZE<span class="logo-up">UP</span></span>
+                </div>
+            </div>
+
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="bycubo-system.html" class="nav-link">ByCubo System</a>
+                <a href="departamentos.html" class="nav-link">Departamentos</a>
+                <a href="educacion.html" class="nav-link">Educación</a>
+                <a href="index.html#contact" class="nav-link">Contacto</a>
+            </div>
+
+            <button class="navbar-cta" onclick="window.location.href='index.html#contact'">Agendar Reunión</button>
+
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="padding-top: 80px;">
+        <div class="hero-container" style="grid-template-columns: 1fr;">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot" style="background-color: var(--color-accent-purple);"></span>
+                    <span class="badge-text" style="color: var(--color-accent-purple);">FORMACIÓN EMPRESARIAL ESTRATÉGICA</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Forma equipos que piensan como <span class="purple-accent">sistemas.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Una biblioteca de cursos, programas, ebooks y capacitaciones diseñadas para que tu equipo entienda, opere y escale como parte de un ecosistema empresarial inteligente.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" style="background-color: var(--color-accent-purple); box-shadow: 0 0 20px rgba(200, 155, 60, 0.3);" onclick="window.location.href='index.html#contact'">Explorar productos</button>
+                    <button class="btn btn-secondary">Capacitación personalizada</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY TRAIN SECTION -->
+    <section class="core-ecosystem">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow" style="color: var(--color-accent-purple);">POR QUÉ FORMAR EQUIPOS</div>
+                <h2 class="section-title">Un sistema sin personas capacitadas para operarlo no funciona.</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); max-width: 1200px; margin: 0 auto;">
+                <div class="ecosystem-card purple">
+                    <div class="card-icon">🧠</div>
+                    <h3 class="card-title">Pensamiento sistémico</h3>
+                    <p class="card-description">Tu equipo aprende a ver la empresa como ecosistema, no como departamentos aislados.</p>
+                </div>
+
+                <div class="ecosystem-card purple">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Implementación inmediata</h3>
+                    <p class="card-description">Herramientas y templates aplicables desde el primer día en tu operación.</p>
+                </div>
+
+                <div class="ecosystem-card purple">
+                    <div class="card-icon">📐</div>
+                    <h3 class="card-title">Metodología ZEUP</h3>
+                    <p class="card-description">Formación alineada 100% al ByCubo System y tus objetivos de crecimiento.</p>
+                </div>
+
+                <div class="ecosystem-card purple">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Resultados medibles</h3>
+                    <p class="card-description">KPIs de aprendizaje y aplicación que se traducen en mejora operativa real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS LIBRARY -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow" style="color: var(--color-accent-purple);">BIBLIOTECA ZEUP</div>
+                <h2 class="section-title">Encuentra el formato que tu equipo necesita.</h2>
+            </div>
+
+            <div class="tools-list" style="margin-bottom: var(--spacing-2xl);">
+                <span class="tool-chip">Todos</span>
+                <span class="tool-chip" style="border-color: rgba(200, 155, 60, 0.3); background-color: rgba(200, 155, 60, 0.1); color: var(--color-accent-purple);">Cursos</span>
+                <span class="tool-chip">Programas</span>
+                <span class="tool-chip">Ebooks</span>
+                <span class="tool-chip">Certificaciones</span>
+                <span class="tool-chip">Capacitaciones</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); max-width: 1200px; margin: 0 auto;">
+                <div class="ecosystem-card">
+                    <div class="card-number">📚</div>
+                    <h3 class="card-title">ByCubo Foundations</h3>
+                    <p class="card-description">Curso completo de 12 módulos para entender e implementar el ByCubo System. Ideal para fundadores y directores.</p>
+                    <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                        <span style="font-size: 20px; font-weight: 700; color: var(--color-accent-primary);">$297</span>
+                        <span style="color: var(--color-text-tertiary); font-size: 13px; margin-left: var(--spacing-md);">USD</span>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md); padding: 10px;">Acceder →</button>
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">🎓</div>
+                    <h3 class="card-title">Operaciones Avanzadas</h3>
+                    <p class="card-description">Programa intensivo de 8 semanas para directores de operaciones. Automatización, procesos y gestión de equipos.</p>
+                    <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                        <span style="font-size: 20px; font-weight: 700; color: var(--color-accent-primary);">$597</span>
+                        <span style="color: var(--color-text-tertiary); font-size: 13px; margin-left: var(--spacing-md);">USD</span>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md); padding: 10px;">Acceder →</button>
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">📄</div>
+                    <h3 class="card-title">Guía de Escalamiento</h3>
+                    <p class="card-description">Manual práctico de 80 páginas con framework completo para escalar sin colapsar la estructura interna.</p>
+                    <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                        <span style="font-size: 20px; font-weight: 700; color: var(--color-accent-primary);">$47</span>
+                        <span style="color: var(--color-text-tertiary); font-size: 13px; margin-left: var(--spacing-md);">USD</span>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md); padding: 10px;">Descargar →</button>
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">🏅</div>
+                    <h3 class="card-title">ZEUP Ecosystem Manager</h3>
+                    <p class="card-description">Certificación profesional para líderes que gestionan ecosistemas empresariales complejos y escalables.</p>
+                    <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                        <span style="font-size: 20px; font-weight: 700; color: var(--color-accent-primary);">$897</span>
+                        <span style="color: var(--color-text-tertiary); font-size: 13px; margin-left: var(--spacing-md);">USD</span>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md); padding: 10px;">Inscribirse →</button>
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">💼</div>
+                    <h3 class="card-title">Training para Equipos</h3>
+                    <p class="card-description">Sesiones personalizadas para tu equipo directivo o departamento. Online o presencial según tus necesidades.</p>
+                    <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                        <span style="font-size: 20px; font-weight: 700; color: var(--color-accent-primary);">A medida</span>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md); padding: 10px;">Cotizar →</button>
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="card-number">🛠️</div>
+                    <h3 class="card-title">Kit de Automatización</h3>
+                    <p class="card-description">Templates, workflows y herramientas pre-configuradas para los 9 departamentos de tu empresa.</p>
+                    <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                        <span style="font-size: 20px; font-weight: 700; color: var(--color-accent-primary);">$197</span>
+                        <span style="color: var(--color-text-tertiary); font-size: 13px; margin-left: var(--spacing-md);">USD</span>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md); padding: 10px;">Obtener →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="cta-title">¿Tu equipo necesita formación estratégica a medida?</h2>
+            <p class="cta-subtitle">Diseñamos programas de capacitación personalizados alineados al ByCubo System y tus objetivos de crecimiento empresarial.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" style="background-color: var(--color-accent-purple); box-shadow: 0 0 20px rgba(200, 155, 60, 0.3);" onclick="window.location.href='index.html#contact'">Solicitar programa personalizado →</button>
+                <button class="btn btn-secondary" onclick="window.location.href='bycubo-system.html'">Ver ByCubo System</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon"><svg class="logo-cube" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4 L34 12 L20 20 L6 12 Z" fill="#06253F" stroke="#E7C76A" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 12 L6 28 L20 36 L20 20 Z" fill="#041C32" stroke="#C89B3C" stroke-width="1.5" stroke-linejoin="round"/><path d="M34 12 L34 28 L20 36 L20 20 Z" fill="#06253F" stroke="#D6A847" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 11 L27 15 L20 19 L13 15 Z" fill="#00C8FF"/><line x1="20" y1="19" x2="20" y2="31" stroke="#00C8FF" stroke-width="1.6"/></svg></span>
+                    <span class="logo-text">ZE<span class="logo-up">UP</span></span>
+                </div>
+                <p class="footer-description">Incubadora · Gestora · Optimizadora de Empresas. Infraestructura operativa que construye sistemas capaces de construir empresas extraordinarias.</p>
+                <div class="footer-slogan">Conectamos · Optimizamos · Potenciamos</div>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Ecosistema</div>
+                <a href="bycubo-system.html">ByCubo System</a>
+                <a href="departamentos.html">Departamentos</a>
+                <a href="educacion.html">Educación</a>
+                <a href="index.html">Metodología</a>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Empresa</div>
+                <a href="index.html">Quiénes somos</a>
+                <a href="index.html">Casos de éxito</a>
+                <a href="index.html">Partners</a>
+                <a href="index.html#contact">Contacto</a>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Legal</div>
+                <a href="#">Privacidad</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZEUP. Todos los derechos reservados.</p>
+            <div class="footer-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter/X</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

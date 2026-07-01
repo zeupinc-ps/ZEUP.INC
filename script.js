@@ -53,7 +53,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all cards and sections
-document.querySelectorAll('.ecosystem-card, .value-card, .problem-item, .timeline-phase, .metric-card, .testimonial-card, .dashboard-mock').forEach(el => {
+document.querySelectorAll('.ecosystem-card, .value-card, .problem-item, .timeline-phase, .metric-card, .testimonial-card, .dashboard-mock, .faq-item').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
@@ -253,6 +253,30 @@ function initTooltips() {
 }
 
 initTooltips();
+
+// Educación: functional category filter for the product library
+(function () {
+    const filterBar = document.getElementById('courseFilters');
+    const grid = document.getElementById('courseGrid');
+    if (!filterBar || !grid) return;
+
+    const chips = filterBar.querySelectorAll('.filter-chip');
+    const cards = grid.querySelectorAll('[data-category]');
+
+    filterBar.addEventListener('click', (e) => {
+        const chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+
+        const filter = chip.dataset.filter;
+        cards.forEach(card => {
+            const match = filter === 'todos' || card.dataset.category === filter;
+            card.style.display = match ? '' : 'none';
+        });
+    });
+})();
 
 // Holographic cursor-follow glow (matches Claude Design backdrop feel)
 (function () {

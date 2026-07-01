@@ -484,6 +484,44 @@ h1, h2, h3, h4, h5, h6 {
     .cursor-glow { display: none; }
 }
 
+/* Departamentos hero — cuadrícula de 9 departamentos (simple, sin jerarquía visual) */
+.dept-grid-visual {
+    position: relative; width: 100%; max-width: 440px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    padding: 28px;
+    background: radial-gradient(circle at 50% 50%, rgba(0,200,255,0.08), transparent 70%);
+    animation: zfloat 9s ease-in-out infinite;
+}
+.dept-chip {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    background: linear-gradient(160deg, var(--color-bg-tertiary), var(--color-bg-secondary));
+    border: 1px solid var(--color-border-cool);
+    border-radius: var(--radius-md);
+    padding: 16px 8px;
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.04em;
+    color: #bff2ff; text-align: center; text-transform: uppercase;
+    transition: all var(--transition-smooth);
+}
+.dept-chip:hover { border-color: var(--color-cyan); transform: translateY(-3px); box-shadow: 0 0 18px rgba(0,200,255,0.18); }
+.dept-chip-icon { display: flex; align-items: center; justify-content: center; color: var(--color-cyan); }
+.dept-grid-caption {
+    text-align: center; margin-top: var(--spacing-md);
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em;
+    color: var(--color-text-tertiary); text-transform: uppercase;
+}
+
+/* ByCubo hero — cubo interno + cubo externo */
+.bycubo-diagram {
+    width: 100%; max-width: 420px; display: block; margin: 0 auto;
+    filter: drop-shadow(0 0 40px rgba(0,200,255,0.12));
+    animation: zfloat 9s ease-in-out infinite;
+}
+.bycubo-diagram-caption {
+    text-align: center; margin-top: var(--spacing-md); max-width: 340px; margin-left: auto; margin-right: auto;
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em;
+    color: var(--color-text-tertiary); line-height: 1.6;
+}
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 /* STATS BAR */
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -605,6 +643,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-number { font-family: var(--font-mono); font-size: 22px; font-weight: 700; color: var(--color-gold); margin-bottom: var(--spacing-md); letter-spacing: 0.05em; }
+.card-tag { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0.12em; color: var(--color-gold-bright); margin-bottom: var(--spacing-sm); margin-top: -8px; }
 .card-icon { font-size: 30px; margin-bottom: var(--spacing-md); opacity: 0.9; }
 .card-title { font-family: var(--font-display); font-size: 20px; font-weight: 600; margin-bottom: var(--spacing-md); color: white; }
 .card-description { color: var(--color-text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: var(--spacing-md); flex-grow: 1; }
@@ -708,6 +747,10 @@ h1, h2, h3, h4, h5, h6 {
     transition: all var(--transition-fast); font-family: var(--font-mono); letter-spacing: 0.03em;
 }
 .tool-chip:hover { border-color: var(--color-gold); color: var(--color-gold-bright); transform: translateY(-2px); }
+button.tool-chip { cursor: pointer; -webkit-appearance: none; appearance: none; }
+.filter-chip.active {
+    border-color: var(--color-gold); color: #041C32; background: var(--gradient-gold); font-weight: 600;
+}
 
 .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-xl); max-width: 1200px; margin: 0 auto; }
 .metric-card {
@@ -741,6 +784,62 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-stars { font-size: 14px; color: var(--color-gold-bright); margin-bottom: var(--spacing-md); letter-spacing: 0.1em; }
 .testimonial-text { font-size: 15px; color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--spacing-md); font-style: italic; }
 .testimonial-author { font-family: var(--font-mono); font-size: 12px; color: var(--color-text-tertiary); font-weight: 500; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* FAQ */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.faq-section { padding: var(--spacing-3xl) var(--spacing-lg); }
+.faq-list { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-md); }
+.faq-item {
+    background: linear-gradient(160deg, var(--color-bg-tertiary), var(--color-bg-secondary));
+    border: 1px solid var(--color-border-cool);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    transition: border-color var(--transition-smooth);
+}
+.faq-item:hover { border-color: var(--color-border); }
+.faq-item[open] { border-color: var(--color-gold); }
+.faq-item summary {
+    cursor: pointer; list-style: none;
+    font-family: var(--font-display); font-weight: 600; font-size: 16px; color: white;
+    display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-md);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+    content: '+'; flex-shrink: 0; font-family: var(--font-mono); font-size: 20px; font-weight: 400;
+    color: var(--color-gold); transition: transform var(--transition-smooth); line-height: 1;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { margin-top: var(--spacing-md); font-size: 15px; color: var(--color-text-secondary); line-height: 1.7; }
+
+/* Department card expandable detail (sub-servicios + CTA) */
+.dept-detail {
+    margin-top: auto; padding-top: var(--spacing-md); border-top: 1px solid var(--color-border-cool);
+}
+.dept-detail summary {
+    cursor: pointer; list-style: none;
+    font-family: var(--font-mono); font-weight: 600; font-size: 12px; letter-spacing: 0.04em;
+    color: var(--color-cyan); text-transform: uppercase;
+    display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-sm);
+}
+.dept-detail summary::-webkit-details-marker { display: none; }
+.dept-detail summary::after {
+    content: '+'; flex-shrink: 0; font-family: var(--font-mono); font-size: 16px; font-weight: 400;
+    color: var(--color-cyan); transition: transform var(--transition-smooth); line-height: 1;
+}
+.dept-detail[open] summary::after { transform: rotate(45deg); }
+.dept-detail-text { margin-top: var(--spacing-md); font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; }
+.dept-subservices { margin: var(--spacing-md) 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.dept-subservices li {
+    font-size: 13px; color: var(--color-text-secondary); padding-left: 16px; position: relative;
+}
+.dept-subservices li::before {
+    content: ''; position: absolute; left: 0; top: 7px; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--color-cyan);
+}
+.dept-cta { display: block; width: 100%; text-align: center; padding: 10px; font-size: 13px; margin-top: var(--spacing-sm); }
+.dept-card { display: flex; flex-direction: column; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 /* CTA BANNER */

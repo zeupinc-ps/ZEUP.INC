@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeupinc-ps.github.io/ZEUP.INC/sitemap.xml

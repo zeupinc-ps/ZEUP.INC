@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByCubo System — Metodología Propietaria ZEUP</title>
     <meta name="description" content="ByCubo System: metodología propietaria ZEUP con 12 módulos interconectados para construir empresas sólidas y escalables.">
+    <link rel="canonical" href="https://zeupinc-ps.github.io/ZEUP.INC/bycubo-system.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ByCubo System — Metodología Propietaria ZEUP">
+    <meta property="og:description" content="ByCubo System: metodología propietaria ZEUP con 12 módulos interconectados para construir empresas sólidas y escalables.">
+    <meta property="og:image" content="https://zeupinc-ps.github.io/ZEUP.INC/assets/zeup-logo.jpg">
+    <meta property="og:url" content="https://zeupinc-ps.github.io/ZEUP.INC/bycubo-system.html">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Saira:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ZEUP",
+      "description": "Incubadora, gestora y optimizadora de empresas. Infraestructura operativa que construye, optimiza y escala ecosistemas empresariales mediante metodologías propias.",
+      "url": "https://zeupinc-ps.github.io/ZEUP.INC/index.html",
+      "logo": "https://zeupinc-ps.github.io/ZEUP.INC/assets/zeup-logo.jpg",
+      "slogan": "Conectamos · Optimizamos · Potenciamos",
+      "email": "hola@zeup.co"
+    }
+    </script>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -41,7 +63,7 @@
 
     <!-- HERO SECTION -->
     <section class="hero" style="padding-top: 80px;">
-        <div class="hero-container" style="grid-template-columns: 1fr;">
+        <div class="hero-container">
             <div class="hero-content">
                 <div class="badge">
                     <span class="badge-dot"></span>
@@ -58,8 +80,51 @@
 
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Solicitar diagnóstico</button>
-                    <button class="btn btn-secondary">Ver los 12 módulos</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('modulos').scrollIntoView({behavior:'smooth'})">Ver los 12 módulos</button>
                 </div>
+            </div>
+
+            <!-- CUBO INTERNO Y CUBO EXTERNO: el sistema dentro del sistema -->
+            <div class="hero-visual">
+                <svg class="bycubo-diagram" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="outerEdge" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#E7C76A"/><stop offset="1" stop-color="#8B6A25"/>
+                        </linearGradient>
+                        <radialGradient id="innerCore" cx="0.5" cy="0.4" r="0.65">
+                            <stop offset="0" stop-color="#7af0ff"/><stop offset="0.55" stop-color="#00C8FF"/><stop offset="1" stop-color="#0A2E4D"/>
+                        </radialGradient>
+                    </defs>
+
+                    <!-- cubo externo: arquitectura de soporte -->
+                    <g class="bycubo-outer">
+                        <path d="M150,40 L246.25,95 L150,150 L53.75,95 Z" fill="rgba(200,155,60,0.05)" stroke="url(#outerEdge)" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="M53.75,95 L53.75,205 L150,260 L150,150 Z" fill="rgba(200,155,60,0.03)" stroke="url(#outerEdge)" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="M246.25,95 L246.25,205 L150,260 L150,150 Z" fill="rgba(200,155,60,0.07)" stroke="url(#outerEdge)" stroke-width="1.6" stroke-linejoin="round"/>
+                    </g>
+
+                    <!-- puntales de conexión entre cubo externo e interno -->
+                    <g stroke="rgba(0,200,255,0.28)" stroke-width="1">
+                        <line x1="150" y1="40" x2="150" y2="105"/>
+                        <line x1="53.75" y1="95" x2="110.625" y2="127.5"/>
+                        <line x1="246.25" y1="95" x2="189.375" y2="127.5"/>
+                    </g>
+
+                    <!-- cubo interno: núcleo del sistema -->
+                    <g class="bycubo-inner">
+                        <path d="M150,105 L189.375,127.5 L150,150 L110.625,127.5 Z" fill="url(#innerCore)" stroke="#7af0ff" stroke-width="1.2" stroke-linejoin="round"/>
+                        <path d="M110.625,127.5 L110.625,172.5 L150,195 L150,150 Z" fill="url(#innerCore)" opacity="0.85" stroke="#00C8FF" stroke-width="1.2" stroke-linejoin="round"/>
+                        <path d="M189.375,127.5 L189.375,172.5 L150,195 L150,150 Z" fill="url(#innerCore)" opacity="0.7" stroke="#00C8FF" stroke-width="1.2" stroke-linejoin="round"/>
+                    </g>
+
+                    <!-- punto orbitando el cubo externo -->
+                    <circle r="4" fill="#00E5FF">
+                        <animateMotion dur="10s" repeatCount="indefinite" path="M150,40 L246.25,95 L246.25,205 L150,260 L53.75,205 L53.75,95 Z"/>
+                    </circle>
+
+                    <text x="150" y="286" text-anchor="middle" class="node-label" style="fill:#E7C76A;font-size:12px;letter-spacing:0.16em;">BYCUBO SYSTEM</text>
+                </svg>
+                <div class="bycubo-diagram-caption">Cubo externo: arquitectura de soporte · Cubo interno: núcleo del sistema</div>
             </div>
         </div>
     </section>
@@ -102,13 +167,13 @@
             <div class="eyebrow" style="justify-content: center; margin-bottom: var(--spacing-lg);">QUÉ ES BYCUBO SYSTEM</div>
             <h2 class="section-title" style="font-size: 42px;">No es un curso. No es consultoría. Es una arquitectura empresarial.</h2>
             <p class="section-subtitle" style="font-size: 18px; max-width: 700px; margin: 0 auto;">
-                ByCubo System es el método propietario de ZEUP para construir una empresa desde sus fundamentos estructurales. 12 módulos que se activan en secuencia, donde cada etapa habilita la siguiente, creando un ecosistema empresarial completo y autónomo.
+                ByCubo System se representa como un cubo dentro de otro cubo. El <strong style="color: var(--color-gold-bright); font-weight: 600;">cubo externo</strong> es la arquitectura de soporte: la estructura organizacional, legal y financiera que sostiene a la empresa. El <strong style="color: var(--color-cyan); font-weight: 600;">cubo interno</strong> es el núcleo operativo: los procesos, la automatización y el sistema comercial que la hacen funcionar día a día. Doce módulos se activan en secuencia, cada uno habilitando al siguiente, hasta formar un ecosistema empresarial completo que opera de forma autónoma.
             </p>
         </div>
     </section>
 
     <!-- 12 MODULES SECTION -->
-    <section class="core-ecosystem">
+    <section class="core-ecosystem" id="modulos">
         <div class="container">
             <div class="section-header">
                 <div class="eyebrow">LOS 12 MÓDULOS DEL SISTEMA</div>
@@ -118,84 +183,84 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); max-width: 1200px; margin: 0 auto;">
                 <div class="ecosystem-card">
                     <div class="card-number">M·01</div>
-                    <div class="card-icon">🏛️</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.4 8.5-8 11-4.6-2.5-8-6-8-11V5z"/></svg></div>
                     <h3 class="card-title">Fundamentos Estratégicos</h3>
                     <p class="card-description">Propósito, misión, visión, valores y posicionamiento. La base sobre la que todo se construye.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·02</div>
-                    <div class="card-icon">⚙️</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
                     <h3 class="card-title">Modelo de Negocio</h3>
                     <p class="card-description">Diseño y validación del modelo. Propuesta de valor, segmentos, canales y estructura de revenue.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·03</div>
-                    <div class="card-icon">📊</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><polygon points="12 3 21 8 12 13 3 8 12 3"/><polyline points="3 13 12 18 21 13"/></svg></div>
                     <h3 class="card-title">Estructura Organizacional</h3>
                     <p class="card-description">Organigrama funcional, roles, responsabilidades y flujos de autoridad claramente definidos.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·04</div>
-                    <div class="card-icon">🔄</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5.3M4 20v-5h5"/></svg></div>
                     <h3 class="card-title">Procesos Operativos</h3>
                     <p class="card-description">Mapeo, documentación y optimización de todos los procesos críticos del negocio.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·05</div>
-                    <div class="card-icon">📈</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="15 6 21 6 21 12"/></svg></div>
                     <h3 class="card-title">Sistema Comercial</h3>
                     <p class="card-description">Pipeline de ventas, proceso comercial, scripts, propuestas y sistema de cierre predecible.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·06</div>
-                    <div class="card-icon">📣</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.5 5.5a9 9 0 0 0 0 13M18.5 5.5a9 9 0 0 1 0 13"/></svg></div>
                     <h3 class="card-title">Ecosistema de Marketing</h3>
                     <p class="card-description">Estrategia de marca, canales digitales, contenido, generación de leads y posicionamiento.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·07</div>
-                    <div class="card-icon">💰</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.3c0-1.3 1.1-2.3 2.5-2.3s2.5 .9 2.5 2c0 2.7-5 1.3-5 4 0 1.1 1.1 2 2.5 2s2.5-1 2.5-2.3"/></svg></div>
                     <h3 class="card-title">Gestión Financiera</h3>
                     <p class="card-description">Contabilidad de gestión, flujo de caja, presupuestos, KPIs financieros y control de costos.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·08</div>
-                    <div class="card-icon">🤖</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="6" height="6" rx="1"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/></svg></div>
                     <h3 class="card-title">Automatización</h3>
                     <p class="card-description">Herramientas y flujos automatizados para reducir trabajo manual y aumentar eficiencia.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·09</div>
-                    <div class="card-icon">👥</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><circle cx="17.5" cy="8.5" r="2.3"/><path d="M15.7 14.8c2.5.3 4.3 2.4 4.3 5"/></svg></div>
                     <h3 class="card-title">Gestión de Talento</h3>
                     <p class="card-description">Selección, onboarding, desarrollo, cultura empresarial y retención de personas clave.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·10</div>
-                    <div class="card-icon">🛡️</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2l8 3v6c0 5-3.4 8.5-8 11-4.6-2.5-8-6-8-11V5z"/><polyline points="8.5 12 11 14.5 15.5 9.5"/></svg></div>
                     <h3 class="card-title">Marco Legal y Compliance</h3>
                     <p class="card-description">Estructura jurídica, contratos, protección IP, compliance regulatorio y gestión de riesgos.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·11</div>
-                    <div class="card-icon">📡</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.2"/><rect x="3" y="14" width="18" height="6" rx="1.2"/><line x1="7" y1="7" x2="7.01" y2="7"/><line x1="7" y1="17" x2="7.01" y2="17"/></svg></div>
                     <h3 class="card-title">Tecnología e Infraestructura</h3>
                     <p class="card-description">Stack tecnológico, integraciones, bases de datos, seguridad y arquitectura digital empresarial.</p>
                 </div>
 
                 <div class="ecosystem-card">
                     <div class="card-number">M·12</div>
-                    <div class="card-icon">🚀</div>
+                    <div class="card-icon" style="color: var(--color-gold-bright);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></div>
                     <h3 class="card-title">Escalamiento y Expansión</h3>
                     <p class="card-description">Estrategias de crecimiento, expansión geográfica, franchising, inversión y métricas de escala.</p>
                 </div>
@@ -214,15 +279,15 @@
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="metric-big">−60%</div>
-                    <div class="metric-label">Reducción de dependencia del fundador</div>
+                    <div class="metric-label">Reducción de dependencia del fundador, CEO o administrador</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-big accent">+3×</div>
                     <div class="metric-label">Velocidad de escalamiento</div>
                 </div>
                 <div class="metric-card">
-                    <div class="metric-big cyan">90d</div>
-                    <div class="metric-label">Para ver resultados operativos tangibles</div>
+                    <div class="metric-big cyan">Semanas</div>
+                    <div class="metric-label">Para ver resultados operativos tangibles, no meses — por la naturaleza secuencial del sistema</div>
                 </div>
             </div>
         </div>
@@ -257,14 +322,13 @@
                 <a href="bycubo-system.html">ByCubo System</a>
                 <a href="departamentos.html">Departamentos</a>
                 <a href="educacion.html">Educación</a>
-                <a href="index.html">Metodología</a>
+                <a href="index.html#metodologia">Metodología</a>
             </div>
 
             <div class="footer-column">
                 <div class="footer-title">Empresa</div>
-                <a href="index.html">Quiénes somos</a>
-                <a href="index.html">Casos de éxito</a>
-                <a href="index.html">Partners</a>
+                <a href="index.html#quienes">Quiénes somos</a>
+                <a href="index.html#faq">Preguntas frecuentes</a>
                 <a href="index.html#contact">Contacto</a>
             </div>
 
@@ -290,4 +354,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

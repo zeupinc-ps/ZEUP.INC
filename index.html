@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEUP — Ecosistemas Empresariales Inteligentes</title>
     <meta name="description" content="ZEUP construye, optimiza y escala empresas mediante metodologías propias, automatización interdepartamental y educación empresarial estratégica.">
+    <link rel="canonical" href="https://zeupinc-ps.github.io/ZEUP.INC/index.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ZEUP — Ecosistemas Empresariales Inteligentes">
+    <meta property="og:description" content="ZEUP construye, optimiza y escala empresas mediante metodologías propias, automatización interdepartamental y educación empresarial estratégica.">
+    <meta property="og:image" content="https://zeupinc-ps.github.io/ZEUP.INC/assets/zeup-logo.jpg">
+    <meta property="og:url" content="https://zeupinc-ps.github.io/ZEUP.INC/index.html">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +21,19 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Saira:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ZEUP",
+      "description": "Incubadora, gestora y optimizadora de empresas. Infraestructura operativa que construye, optimiza y escala ecosistemas empresariales mediante metodologías propias.",
+      "url": "https://zeupinc-ps.github.io/ZEUP.INC/index.html",
+      "logo": "https://zeupinc-ps.github.io/ZEUP.INC/assets/zeup-logo.jpg",
+      "slogan": "Conectamos · Optimizamos · Potenciamos",
+      "email": "hola@zeup.co"
+    }
+    </script>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -59,7 +81,7 @@
 
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="scrollToContact()">Agendar Diagnóstico</button>
-                    <button class="btn btn-secondary">Explorar Ecosistema</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('ecosistema').scrollIntoView({behavior:'smooth'})">Explorar Ecosistema</button>
                 </div>
             </div>
 
@@ -129,7 +151,7 @@
     </section>
 
     <!-- WHO WE ARE SECTION -->
-    <section class="who-we-are">
+    <section class="who-we-are" id="quienes">
         <div class="container">
             <div class="who-we-are-grid">
                 <div class="who-we-are-left">
@@ -146,22 +168,22 @@
 
                     <div class="values-grid">
                         <div class="value-card">
-                            <div class="value-icon">🎯</div>
+                            <div class="value-icon" style="color: var(--color-gold-bright);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div>
                             <div class="value-title">Misión</div>
                             <p>Construir empresas desde la estructura.</p>
                         </div>
                         <div class="value-card">
-                            <div class="value-icon">🚀</div>
+                            <div class="value-icon" style="color: var(--color-gold-bright);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="15 6 21 6 21 12"/></svg></div>
                             <div class="value-title">Visión</div>
                             <p>Empresas que escalan sin colapsar.</p>
                         </div>
                         <div class="value-card">
-                            <div class="value-icon">⚠️</div>
+                            <div class="value-icon" style="color: var(--color-gold-bright);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="7.5" x2="12" y2="13"/><circle cx="12" cy="16.5" r="0.6" fill="currentColor"/></svg></div>
                             <div class="value-title">El Problema</div>
                             <p>80% fracasan en 5 años sin sistema.</p>
                         </div>
                         <div class="value-card">
-                            <div class="value-icon">⚡</div>
+                            <div class="value-icon" style="color: var(--color-gold-bright);"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="13 2 4 14 11 14 10 22 20 9 13 9 13 2"/></svg></div>
                             <div class="value-title">Diferencial</div>
                             <p>Metodología ZEUP sistémica.</p>
                         </div>
@@ -225,7 +247,7 @@
     </section>
 
     <!-- CORE ECOSYSTEM SECTION -->
-    <section class="core-ecosystem">
+    <section class="core-ecosystem" id="ecosistema">
         <div class="container">
             <div class="section-header">
                 <div class="eyebrow">CORE ECOSYSTEM</div>
@@ -236,6 +258,7 @@
             <div class="ecosystem-cards">
                 <div class="ecosystem-card">
                     <div class="card-number">01</div>
+                    <div class="card-tag">RUTA DE LEVANTAMIENTO</div>
                     <div class="card-icon">◆</div>
                     <h3 class="card-title">ByCubo System</h3>
                     <p class="card-description">Sistema propietario de 12 módulos interconectados para construir empresas sólidas desde su base estructural.</p>
@@ -249,9 +272,10 @@
 
                 <div class="ecosystem-card">
                     <div class="card-number">02</div>
+                    <div class="card-tag" style="color: var(--color-cyan);">GESTIÓN INTERDEPARTAMENTAL</div>
                     <div class="card-icon">⬟</div>
                     <h3 class="card-title">Departamentos Operacionales</h3>
-                    <p class="card-description">9 departamentos diseñados como sistema sincronizado, no como silos. Optimización y automatización interdepartamental profunda.</p>
+                    <p class="card-description">9 departamentos diseñados como sistema sincronizado, con visibilidad compartida entre áreas. Optimización y automatización interdepartamental profunda.</p>
                     <div class="card-pills">
                         <span class="pill">9 deptos</span>
                         <span class="pill">automatización</span>
@@ -262,8 +286,9 @@
 
                 <div class="ecosystem-card">
                     <div class="card-number">03</div>
+                    <div class="card-tag">FORMACIÓN Y EDUCACIÓN</div>
                     <div class="card-icon">■</div>
-                    <h3 class="card-title">Educación Empresarial</h3>
+                    <h3 class="card-title">Academia ZEUP</h3>
                     <p class="card-description">Cursos, programas, ebooks y capacitaciones estratégicas para equipos que operan como ecosistemas.</p>
                     <div class="card-pills">
                         <span class="pill">cursos</span>
@@ -293,7 +318,7 @@
                         </div>
                         <div class="problem-item high">
                             <span class="problem-dot"></span>
-                            <span class="problem-text">Equipos desconectados operando en silos</span>
+                            <span class="problem-text">Equipos desconectados, sin visibilidad compartida entre áreas</span>
                             <span class="problem-badge">ALTO</span>
                         </div>
                         <div class="problem-item critical">
@@ -383,7 +408,7 @@
     </section>
 
     <!-- METHODOLOGY SECTION -->
-    <section class="methodology-section">
+    <section class="methodology-section" id="metodologia">
         <div class="container">
             <div class="section-header">
                 <div class="eyebrow">METODOLOGÍA ZEUP</div>
@@ -500,6 +525,43 @@
         </div>
     </section>
 
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">PREGUNTAS FRECUENTES</div>
+                <h2 class="section-title">Antes de que preguntes, respondemos.</h2>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>¿Qué es exactamente ZEUP?</summary>
+                    <p>No somos una consultora tradicional ni una agencia. ZEUP es una infraestructura operativa: diseñamos, implementamos y automatizamos los sistemas internos que le permiten a tu empresa crecer sin depender de una sola persona.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cómo funciona el diagnóstico estratégico inicial?</summary>
+                    <p>Es una videollamada de 60 minutos, sin costo y sin compromiso. Analizamos el estado real de tu ecosistema empresarial contra los 12 módulos de ByCubo System y te entregamos un mapa priorizado de dónde intervenir primero.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto tiempo toma ver resultados?</summary>
+                    <p>Los primeros resultados operativos tangibles aparecen desde las primeras semanas de implementación, gracias a la naturaleza secuencial del sistema. La mejora promedio en eficiencia operativa que reportan nuestros clientes a 90 días es de +340%.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿ByCubo System reemplaza a mi equipo actual?</summary>
+                    <p>No. ByCubo System no reemplaza personas, les da un sistema. Tu equipo sigue operando la empresa, pero ahora con procesos documentados, automatizaciones activas y roles claramente definidos en vez de depender de la memoria o la intuición individual.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué diferencia a ZEUP de una consultora tradicional?</summary>
+                    <p>Una consultora entrega un diagnóstico en PDF. ZEUP implementa: construimos los procesos, configuramos las automatizaciones y dejamos el sistema operando dentro de tu empresa, no en una presentación.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Puedo empezar solo con Educación Empresarial, sin contratar todo el ecosistema?</summary>
+                    <p>Sí. La biblioteca de cursos, programas y certificaciones de ZEUP EDU es modular y se puede adquirir de forma independiente, sin necesidad de contratar ByCubo System o la optimización departamental.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA BANNER -->
     <section class="cta-banner">
         <div class="container">
@@ -507,7 +569,7 @@
             <p class="cta-subtitle">Agenda tu diagnóstico estratégico sin costo. En 60 minutos analizamos tu ecosistema y diseñamos el mapa hacia el siguiente nivel.</p>
             <div class="cta-buttons">
                 <button class="btn btn-primary" onclick="scrollToContact()">Agendar Diagnóstico Estratégico</button>
-                <button class="btn btn-secondary">Ver ByCubo System</button>
+                <button class="btn btn-secondary" onclick="window.location.href='bycubo-system.html'">Ver ByCubo System</button>
             </div>
         </div>
     </section>
@@ -601,14 +663,13 @@
                 <a href="bycubo-system.html">ByCubo System</a>
                 <a href="departamentos.html">Departamentos</a>
                 <a href="educacion.html">Educación</a>
-                <a href="#home">Metodología</a>
+                <a href="#metodologia">Metodología</a>
             </div>
 
             <div class="footer-column">
                 <div class="footer-title">Empresa</div>
-                <a href="#home">Quiénes somos</a>
-                <a href="#home">Casos de éxito</a>
-                <a href="#home">Partners</a>
+                <a href="#quienes">Quiénes somos</a>
+                <a href="#faq">Preguntas frecuentes</a>
                 <a href="#contact">Contacto</a>
             </div>
 

@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Departamentos Operacionales — ZEUP</title>
     <meta name="description" content="Los 9 departamentos operacionales optimizados y sincronizados como un único ecosistema empresarial.">
+    <link rel="canonical" href="https://zeupinc-ps.github.io/ZEUP.INC/departamentos.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Departamentos Operacionales — ZEUP">
+    <meta property="og:description" content="Los 9 departamentos operacionales optimizados y sincronizados como un único ecosistema empresarial.">
+    <meta property="og:image" content="https://zeupinc-ps.github.io/ZEUP.INC/assets/zeup-logo.jpg">
+    <meta property="og:url" content="https://zeupinc-ps.github.io/ZEUP.INC/departamentos.html">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Saira:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ZEUP",
+      "description": "Incubadora, gestora y optimizadora de empresas. Infraestructura operativa que construye, optimiza y escala ecosistemas empresariales mediante metodologías propias.",
+      "url": "https://zeupinc-ps.github.io/ZEUP.INC/index.html",
+      "logo": "https://zeupinc-ps.github.io/ZEUP.INC/assets/zeup-logo.jpg",
+      "slogan": "Conectamos · Optimizamos · Potenciamos",
+      "email": "hola@zeup.co"
+    }
+    </script>
     <style>
         .cyan-accent { color: var(--color-accent-cyan); }
         .ecosystem-card.cyan { border-left: 3px solid var(--color-accent-cyan); }
@@ -45,7 +67,7 @@
 
     <!-- HERO SECTION -->
     <section class="hero" style="padding-top: 80px;">
-        <div class="hero-container" style="grid-template-columns: 1fr;">
+        <div class="hero-container">
             <div class="hero-content">
                 <div class="badge">
                     <span class="badge-dot" style="background-color: var(--color-accent-cyan);"></span>
@@ -57,19 +79,35 @@
                 </h1>
 
                 <p class="hero-subtitle">
-                    La mayoría de las empresas opera con departamentos desconectados que trabajan en silos. ZEUP diseña y sincroniza los 9 departamentos críticos para que funcionen como un único ecosistema operativo.
+                    La mayoría de las empresas opera con departamentos desconectados, cada uno con su propia información y sus propios criterios. ZEUP diseña y sincroniza los 9 departamentos críticos para que funcionen como un único ecosistema operativo.
                 </p>
 
                 <div class="hero-buttons">
                     <button class="btn btn-primary" style="background-color: var(--color-accent-cyan); box-shadow: 0 0 20px rgba(0, 207, 255, 0.3);" onclick="window.location.href='index.html#contact'">Optimizar mi empresa</button>
-                    <button class="btn btn-secondary">Ver los 9 departamentos</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('los-9-departamentos').scrollIntoView({behavior:'smooth'})">Ver los 9 departamentos</button>
                 </div>
+            </div>
+
+            <!-- CUADRÍCULA DE DEPARTAMENTOS: 9 sistemas, un ecosistema -->
+            <div class="hero-visual">
+                <div class="dept-grid-visual">
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18"/><rect x="10" y="15" width="4" height="6"/></svg></span>Dirección General</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></span>Operaciones</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/></svg></span>Finanzas</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7"/></svg></span>Marketing</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/></svg></span>RRHH</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="20" x2="5" y2="12"/><line x1="12" y1="20" x2="12" y2="6"/><line x1="19" y1="20" x2="19" y2="15"/></svg></span>Estrategia</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><line x1="8" y1="20" x2="16" y2="20"/></svg></span>Tecnología</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><line x1="6" y1="21" x2="18" y2="21"/><path d="M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"/><line x1="5" y1="7" x2="19" y2="7"/></svg></span>Legal</div>
+                    <div class="dept-chip"><span class="dept-chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/></svg></span>Comercial</div>
+                </div>
+                <div class="dept-grid-caption">9 sistemas · 1 ecosistema sincronizado</div>
             </div>
         </div>
     </section>
 
     <!-- 9 DEPARTMENTS SECTION -->
-    <section class="core-ecosystem">
+    <section class="core-ecosystem" id="los-9-departamentos">
         <div class="container">
             <div class="section-header">
                 <div class="eyebrow" style="color: var(--color-accent-cyan);">LOS 9 DEPARTAMENTOS CRÍTICOS</div>
@@ -78,103 +116,193 @@
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); max-width: 1200px; margin: 0 auto;">
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">01</div>
-                    <div class="card-icon">🏢</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18"/><rect x="10" y="15" width="4" height="6"/><line x1="7" y1="7" x2="9" y2="7"/><line x1="15" y1="7" x2="17" y2="7"/><line x1="7" y1="11" x2="9" y2="11"/><line x1="15" y1="11" x2="17" y2="11"/></svg></div>
                     <h3 class="card-title">Dirección General</h3>
                     <p class="card-description">Gobierno corporativo, toma de decisiones estratégicas, KPIs organizacionales y visión de largo plazo.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">gobiernanza</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">KPIs</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Diseñamos el nivel de gobierno corporativo de tu empresa: cómo se toman las decisiones, quién las toma y con qué información se sostienen.</p>
+                        <ul class="dept-subservices">
+                            <li>Diagnóstico de gobierno corporativo</li>
+                            <li>Diseño de KPIs organizacionales</li>
+                            <li>Dashboard ejecutivo en tiempo real</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">02</div>
-                    <div class="card-icon">⚙️</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
                     <h3 class="card-title">Dirección de Operaciones</h3>
                     <p class="card-description">Procesos centrales documentados, estandarizados y optimizados. Flujos de trabajo con mínima fricción.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">procesos</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">eficiencia</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Mapeamos y documentamos los procesos que hoy dependen de la memoria del equipo, y los convertimos en flujos de trabajo estandarizados.</p>
+                        <ul class="dept-subservices">
+                            <li>Mapeo y documentación de procesos</li>
+                            <li>Automatización de flujos de trabajo</li>
+                            <li>Sistema de control de calidad</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">03</div>
-                    <div class="card-icon">💰</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.3c0-1.3 1.1-2.3 2.5-2.3s2.5 .9 2.5 2c0 2.7-5 1.3-5 4 0 1.1 1.1 2 2.5 2s2.5-1 2.5-2.3"/></svg></div>
                     <h3 class="card-title">Dirección de Finanzas</h3>
                     <p class="card-description">Contabilidad de gestión, flujo de caja, presupuestación, control de costos y reporting financiero.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">finanzas</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">cash-flow</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Convertimos las finanzas en información que informa decisiones, no solo un registro histórico de lo que ya pasó.</p>
+                        <ul class="dept-subservices">
+                            <li>Implementación de contabilidad de gestión</li>
+                            <li>Automatización de facturación y cobros</li>
+                            <li>Dashboard financiero en tiempo real</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">04</div>
-                    <div class="card-icon">📣</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.5 5.5a9 9 0 0 0 0 13M18.5 5.5a9 9 0 0 1 0 13"/></svg></div>
                     <h3 class="card-title">Marketing y Publicidad</h3>
                     <p class="card-description">Estrategia de marca, contenido, canales digitales, generación de demanda y posicionamiento.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">marca</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">demanda</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Construimos un sistema de atracción constante de prospectos calificados, no campañas aisladas sin continuidad.</p>
+                        <ul class="dept-subservices">
+                            <li>Estrategia de marca y posicionamiento</li>
+                            <li>Sistema de generación de leads</li>
+                            <li>Automatización de contenido y publicación</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">05</div>
-                    <div class="card-icon">👥</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><circle cx="17.5" cy="8.5" r="2.3"/><path d="M15.7 14.8c2.5.3 4.3 2.4 4.3 5"/></svg></div>
                     <h3 class="card-title">Recursos Humanos</h3>
                     <p class="card-description">Atracción, selección, onboarding, desarrollo y retención de talento. Cultura documentada y escalable.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">talento</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">cultura</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Documentamos la cultura y los procesos de gestión de personas para que escalen con la empresa, no solo con la memoria del fundador.</p>
+                        <ul class="dept-subservices">
+                            <li>Proceso de selección sistematizado</li>
+                            <li>Onboarding automatizado por rol</li>
+                            <li>Sistema de seguimiento de OKRs</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">06</div>
-                    <div class="card-icon">📊</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="20" x2="5" y2="12"/><line x1="12" y1="20" x2="12" y2="6"/><line x1="19" y1="20" x2="19" y2="15"/><line x1="3" y1="20" x2="21" y2="20"/></svg></div>
                     <h3 class="card-title">Análisis y Estrategias</h3>
                     <p class="card-description">Inteligencia de negocio, análisis de datos, innovación estratégica y nuevas oportunidades.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">datos</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">estrategia</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Convertimos los datos que ya genera tu empresa en ventajas competitivas concretas, no en reportes que nadie revisa.</p>
+                        <ul class="dept-subservices">
+                            <li>Modelos de análisis predictivo</li>
+                            <li>Mapeo de oportunidades de mercado</li>
+                            <li>Reportes de innovación y tendencias</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">07</div>
-                    <div class="card-icon">💻</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/><rect x="9" y="7.5" width="6" height="5"/></svg></div>
                     <h3 class="card-title">Tecnología e Información</h3>
                     <p class="card-description">Stack tecnológico alineado, integraciones, seguridad e infraestructura escalable.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">tecnología</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">seguridad</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Alineamos la tecnología a los objetivos del negocio: herramientas que se integran entre sí, no plataformas sueltas que generan más trabajo.</p>
+                        <ul class="dept-subservices">
+                            <li>Integración entre herramientas clave</li>
+                            <li>Monitoreo de sistemas 24/7</li>
+                            <li>Arquitectura de seguridad y respaldo</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">08</div>
-                    <div class="card-icon">⚖️</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><line x1="6" y1="21" x2="18" y2="21"/><line x1="5" y1="7" x2="19" y2="7"/><path d="M5 7l-3 6a3 3 0 0 0 6 0z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0z"/></svg></div>
                     <h3 class="card-title">Legalidad y Cumplimiento</h3>
                     <p class="card-description">Estructura jurídica sólida, contratos estandarizados, protección IP y compliance regulatorio.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">legal</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">compliance</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Construimos la estructura jurídica que protege a la empresa y a sus fundadores, con contratos y documentación centralizada.</p>
+                        <ul class="dept-subservices">
+                            <li>Estructura jurídica y contratos estandarizados</li>
+                            <li>Repositorio centralizado de gestión documental</li>
+                            <li>Alertas de vencimientos y compliance</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
 
-                <div class="ecosystem-card cyan">
+                <div class="ecosystem-card cyan dept-card">
                     <div class="card-number" style="color: var(--color-accent-cyan);">09</div>
-                    <div class="card-icon">📈</div>
+                    <div class="card-icon" style="color: var(--color-cyan);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="15 6 21 6 21 12"/></svg></div>
                     <h3 class="card-title">Sistema Comercial</h3>
                     <p class="card-description">Pipeline estructurado, proceso de venta documentado, CRM y sistema de cierre predecible.</p>
                     <div class="card-pills">
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">ventas</span>
                         <span class="pill" style="background-color: rgba(0, 207, 255, 0.1); border-color: rgba(0, 207, 255, 0.3); color: var(--color-accent-cyan);">sistema</span>
                     </div>
+                    <details class="dept-detail">
+                        <summary>Ver sub-servicios y detalle</summary>
+                        <p class="dept-detail-text">Diseñamos un sistema de ventas que no depende de un vendedor estrella: pipeline, seguimiento y cierre predecibles.</p>
+                        <ul class="dept-subservices">
+                            <li>Diseño de pipeline de ventas y CRM</li>
+                            <li>Seguimiento automático de prospectos</li>
+                            <li>Sistema de propuestas y cotizaciones</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-secondary dept-cta">Solicitar este servicio →</a>
+                    </details>
                 </div>
             </div>
         </div>
@@ -191,7 +319,7 @@
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="metric-big cyan">01</div>
-                    <h3 style="color: white; margin-bottom: var(--spacing-sm);">Eliminación de silos</h3>
+                    <h3 style="color: white; margin-bottom: var(--spacing-sm);">Visibilidad compartida entre áreas</h3>
                     <div class="metric-label">Ventas sabe lo que hace marketing. Finanzas ve lo que gasta operaciones. Todos con información en tiempo real.</div>
                 </div>
                 <div class="metric-card">
@@ -237,14 +365,13 @@
                 <a href="bycubo-system.html">ByCubo System</a>
                 <a href="departamentos.html">Departamentos</a>
                 <a href="educacion.html">Educación</a>
-                <a href="index.html">Metodología</a>
+                <a href="index.html#metodologia">Metodología</a>
             </div>
 
             <div class="footer-column">
                 <div class="footer-title">Empresa</div>
-                <a href="index.html">Quiénes somos</a>
-                <a href="index.html">Casos de éxito</a>
-                <a href="index.html">Partners</a>
+                <a href="index.html#quienes">Quiénes somos</a>
+                <a href="index.html#faq">Preguntas frecuentes</a>
                 <a href="index.html#contact">Contacto</a>
             </div>
 
@@ -270,4 +397,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

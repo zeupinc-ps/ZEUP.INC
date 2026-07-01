@@ -890,6 +890,15 @@ button.tool-chip { cursor: pointer; -webkit-appearance: none; appearance: none; 
 }
 .form-legal { font-size: 12px; color: var(--color-text-tertiary); text-align: center; }
 
+.gform-embed-wrapper {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(200,155,60,0.08), 0 20px 50px -25px rgba(0,0,0,0.6);
+}
+.gform-embed-wrapper iframe { display: block; border: none; }
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 /* FOOTER */
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */

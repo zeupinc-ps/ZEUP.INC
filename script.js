@@ -58,32 +58,11 @@ document.querySelectorAll('.ecosystem-card, .value-card, .problem-item, .timelin
     observer.observe(el);
 });
 
-// Form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-
-        // Simulate form submission
-        console.log('Form data:', data);
-
-        // Show success message
-        const originalButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = originalButton.textContent;
-
-        originalButton.textContent = '✓ Solicitud enviada';
-        originalButton.disabled = true;
-
-        setTimeout(() => {
-            originalButton.textContent = originalText;
-            originalButton.disabled = false;
-            contactForm.reset();
-        }, 3000);
-    });
-}
+// Contact form: embedded directly as a Google Forms iframe (see index.html
+// .gform-embed-wrapper) — Google handles validation and submission natively,
+// no JS needed here. A hand-built form can't POST to Google Forms reliably:
+// each submission requires a fresh per-pageload anti-abuse token generated
+// by Google's own rendered page, which a static site can't reproduce.
 
 // Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

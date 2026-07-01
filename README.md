@@ -270,8 +270,8 @@ Para poner en producción:
 
 ## 📧 Información de Contacto
 
-**Email:** hola@zeup.co  
-**WhatsApp:** +1 (555) 000-0000  
+**Email:** zeup.inc@gmail.com  
+**WhatsApp:** +56 9 4852 7605  
 **Horario:** Lun–Vie, 9:00–18:00 (GMT-5)
 
 ---

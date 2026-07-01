@@ -67,7 +67,7 @@ Luego activa Pages igual que en los pasos 4–7 de la Opción A.
 
 ## Nota sobre el formulario de contacto
 
-El formulario muestra una confirmación simulada (no envía correo, porque GitHub Pages es estático). Para recibir los envíos en `hola@zeup.co`, conéctalo a un servicio gratuito como **Formspree** o **Getform**:
+El formulario muestra una confirmación simulada (no envía correo, porque GitHub Pages es estático). Para recibir los envíos en `zeup.inc@gmail.com`, conéctalo a un servicio gratuito como **Formspree** o **Getform**:
 
 1. Crea un formulario en el servicio y copia su URL de acción.
 2. En `index.html`, en `<form id="contactForm">`, agrega `action="URL_DEL_SERVICIO" method="POST"` y `name` a cada campo.
